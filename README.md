@@ -1,23 +1,23 @@
 # 🔮 Tarot Card API
 
-A free, open-source Tarot Card API with **78 high-resolution card images** and rich narrative interpretations. Built with Node.js + Express. No API keys. No rate limits. Just cards.
+A free, open source Tarot Card API with **78 high resolution card images** and rich narrative interpretations. Built with Node.js and Express. No API keys. No rate limits. Just cards.
 
 ## 🌟 Features
 
-- **Full 78-card deck** — every Major and Minor Arcana card included
-- **High-quality imagery** — each card comes with its own JPEG artwork served straight from the API
-- **Random card endpoint** — perfect for "card of the day" widgets or daily readings
-- **Rich interpretations** — every card ships with a detailed, narrative-style description
-- **Zero auth** — no API keys, no signup, no rate limits
-- **CORS-enabled** — call it directly from the browser
-- **Bundled live demo** — open `http://localhost:3000/` after starting the server to see the interactive showcase
+- **Full 78 card deck.** Every Major and Minor Arcana card included.
+- **High quality imagery.** Each card comes with its own JPEG artwork served straight from the API.
+- **Random card endpoint.** Perfect for "card of the day" widgets or daily readings.
+- **Rich interpretations.** Every card ships with a detailed, narrative style description.
+- **Zero auth.** No API keys, no signup, no rate limits.
+- **CORS enabled.** Call it directly from the browser.
+- **Bundled live demo.** Open `http://localhost:3000/` after starting the server to see the interactive showcase.
 
 ## 🔮 Ideal for
 
 - Tarot reading websites and apps
 - Spiritual and astrological content creators
 - Personal projects exploring divination and Tarot
-- Educational purposes — learning REST APIs or Tarot card meanings
+- Educational purposes such as learning REST APIs or Tarot card meanings
 
 ## 🚀 Getting Started
 
@@ -39,7 +39,7 @@ curl http://localhost:3000/cards/onecard
 | Method | Path                  | Description                                  |
 | ------ | --------------------- | -------------------------------------------- |
 | `GET`  | `/`                   | Interactive demo page                        |
-| `GET`  | `/cards`              | Returns the entire 78-card deck              |
+| `GET`  | `/cards`              | Returns the entire 78 card deck              |
 | `GET`  | `/cards/onecard`      | Returns a single random card                 |
 | `GET`  | `/tarotdeck/:image`   | Serves the card artwork (e.g. `thefool.jpeg`)|
 
@@ -48,7 +48,7 @@ curl http://localhost:3000/cards/onecard
 ```json
 {
   "name": "The Fool",
-  "description": "The card suggests that your investments have the potential to yield positive results...",
+  "description": "The Fool represents new beginnings, fresh starts, and stepping into the unknown with an open heart...",
   "image": "/tarotdeck/thefool.jpeg"
 }
 ```
@@ -59,20 +59,20 @@ curl http://localhost:3000/cards/onecard
 const res = await fetch("http://localhost:3000/cards/onecard");
 const card = await res.json();
 
-console.log(card.name);         // "The Star"
-console.log(card.image);        // "/tarotdeck/thestar.jpeg"
+console.log(card.name);   // "The Star"
+console.log(card.image);  // "/tarotdeck/thestar.jpeg"
 ```
 
 ## 🧰 Tech stack
 
-- [Express 5](https://expressjs.com/) — HTTP routing
-- [CORS](https://www.npmjs.com/package/cors) — cross-origin requests enabled
-- [dotenv](https://www.npmjs.com/package/dotenv) — environment configuration
-- [nodemon](https://www.npmjs.com/package/nodemon) — auto-restart in dev (`npm run dev`)
+- [Express 5](https://expressjs.com/) for HTTP routing
+- [CORS](https://www.npmjs.com/package/cors) for cross origin requests
+- [dotenv](https://www.npmjs.com/package/dotenv) for environment configuration
+- [nodemon](https://www.npmjs.com/package/nodemon) for auto restart in dev (`npm run dev`)
 
 ## 🤝 Contributing
 
-Suggestions, improvements, and pull requests are welcome. Let's make this the best Tarot Card API out there!
+Suggestions, improvements, and pull requests are welcome. Let's make this the best Tarot Card API out there.
 
 ## 📜 License
 
